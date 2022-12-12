@@ -1,7 +1,7 @@
 from lib2to3.refactor import get_all_fix_names
 import unicodedata
 import streamlit as st
-from pyresparser import ResumeParser
+import pyresparser
 import nltk
 nltk.download()
 # nltk.download('punkt')
@@ -305,7 +305,7 @@ def startApp():
             st.write("")
             st.write("")
         
-            resume_data = ResumeParser(save_image_path).get_extracted_data()
+            resume_data = pyresparser.ResumeParser(save_image_path).get_extracted_data()
             
             if resume_data['skills']:
                 resume_text = pdf_reader(save_image_path)
