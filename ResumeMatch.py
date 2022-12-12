@@ -73,13 +73,12 @@ def glassdoor_scrapper(baseurl, targetnum, list_returnedTuple):
     # initialises prev_url as base_url
     prev_url = baseurl
     
-    my_bar = st.progress(0)
     while total_listingCount <= target_num:
         # clean up buffer
         new_url = update_url(prev_url, page_index)
         page_soup,_ = requestAndParse(new_url)
         listings_set, jobCount = extract_listings(page_soup)
-        my_bar.progress(len(listings_set))
+        
 
         print("\n[INFO] Processing page index {}: {}".format(page_index, new_url))
         print("[INFO] Found {} links in page index {}".format(jobCount, page_index))
@@ -235,7 +234,7 @@ def unicode_normalize(s):
     return unicodedata.normalize('NFKD', s).encode('ascii', 'ignore')
 def get_top_resume_skills(skillsSet):
     data = dict()
-    with open('/Users/joshuakiprono/Desktop/Technology Skills.csv', 'r') as infile:  
+    with open('./TechnologySkills.csv', 'r') as infile:  
         # Iterate over each row in the csv using reader object
         for sk in skillsSet:
             csv_reader = csv.reader(infile)
@@ -479,7 +478,6 @@ def startApp():
                     list_returnedTuple = []
                     with st.spinner('Please wait as  I fetch relevant job postings ...'):
                         base_url = process_url(data[0][0], opportunity_kind)
-                        st.write(base_url)
                         glassdoor_scrapper(base_url, 4, list_returnedTuple)
                         display_postings(list_returnedTuple)
                     st.success('Done!')
