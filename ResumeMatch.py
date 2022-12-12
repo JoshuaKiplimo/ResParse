@@ -3,6 +3,9 @@ import unicodedata
 import streamlit as st
 from pyresparser import ResumeParser
 import nltk
+nltk.download()
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from difflib import get_close_matches
@@ -23,9 +26,7 @@ from pdfGenerator import PDF
 import math
 import unicodedata
 
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
+
 
 def record_Audio():
     with st.expander("🎙️" + " Prefer audio assistant instead ?", expanded=False):
