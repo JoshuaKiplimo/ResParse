@@ -14,7 +14,7 @@ pyresparser==1.0.6
 nltk==3.6.7
 cdifflib
 requests==2.28.1
-re==2022.10.31
+re
 PyPDF2==2.12.1
 math
 unicodedata
