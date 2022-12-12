@@ -3,10 +3,7 @@ import unicodedata
 import streamlit as st
 from pyresparser import ResumeParser
 import nltk
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
 from nltk.corpus import stopwords
-nltk.download('stopwords')
 from nltk.tokenize import word_tokenize
 from difflib import get_close_matches
 import csv
@@ -26,8 +23,9 @@ from pdfGenerator import PDF
 import math
 import unicodedata
 
-env = environ.Env()
-environ.Env.read_env()
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 
 def record_Audio():
     with st.expander("🎙️" + " Prefer audio assistant instead ?", expanded=False):
@@ -75,7 +73,6 @@ def glassdoor_scrapper(baseurl, targetnum, list_returnedTuple):
         page_soup,_ = requestAndParse(new_url)
         listings_set, jobCount = extract_listings(page_soup)
         
-
         print("\n[INFO] Processing page index {}: {}".format(page_index, new_url))
         print("[INFO] Found {} links in page index {}".format(jobCount, page_index))
 
@@ -119,23 +116,23 @@ def get_skills(skills):
             headers = {'Authorization': 'Bearer {token}'.format(token=token)}
             response2 = requests.request("GET", url, headers=headers,params=querystring).json()
 
-def getUSAGOVJobs(keyword):
-    authkey = env('AUTHKEY')
-    user = env('USERAGENT')
-    host = env('HOST')
-    headers =  { "Host": host,
-            "User-Agent": user,          
-                "Authorization-Key": authkey      
-            }
-    baseUrl = 'https://data.usajobs.gov/api/'
-    response = requests.get(baseUrl + 'Search?Keyword='+keyword, headers =headers ).json()
-    data = response['SearchResult']['SearchResultItems']
-    for opps in data:
-        with st.expander("👨‍💻" + opps['MatchedObjectDescriptor']['PositionTitle'] + " - " + opps['MatchedObjectDescriptor']['OrganizationName'] , expanded=False):
+# def getUSAGOVJobs(keyword):
+#     authkey = env('AUTHKEY')
+#     user = env('USERAGENT')
+#     host = env('HOST')
+#     headers =  { "Host": host,
+#             "User-Agent": user,          
+#                 "Authorization-Key": authkey      
+#             }
+#     baseUrl = 'https://data.usajobs.gov/api/'
+#     response = requests.get(baseUrl + 'Search?Keyword='+keyword, headers =headers ).json()
+#     data = response['SearchResult']['SearchResultItems']
+#     for opps in data:
+#         with st.expander("👨‍💻" + opps['MatchedObjectDescriptor']['PositionTitle'] + " - " + opps['MatchedObjectDescriptor']['OrganizationName'] , expanded=False):
             
-            st.write(opps['MatchedObjectDescriptor']["UserArea"]["Details"]["JobSummary"])
-            if st.button(key= opps['MatchedObjectId'], label="View Online"):
-                webbrowser.open_new_tab(opps['MatchedObjectDescriptor']['PositionURI'])
+#             st.write(opps['MatchedObjectDescriptor']["UserArea"]["Details"]["JobSummary"])
+#             if st.button(key= opps['MatchedObjectId'], label="View Online"):
+#                 webbrowser.open_new_tab(opps['MatchedObjectDescriptor']['PositionURI'])
 def display_postings(job_listings):
     for job in job_listings:
        
