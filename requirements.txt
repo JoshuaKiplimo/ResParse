@@ -16,7 +16,7 @@ cdifflib
 requests==2.28.1
 PyPDF2==2.12.1
 pyresparser==1.0.6
-# pyaudio
-# SpeechRecognition
-# portaudio
-# gTTS
+pyaudio
+SpeechRecognition
+portaudio
+gTTS
