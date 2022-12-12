@@ -10,5 +10,5 @@ pipwin
 # portaudio
 # gTTS
 streamlit-ace==0.1.1
-fpdf==1.6.0
+fpdf==1.7.2
 st-annotated-text==3.0.0
