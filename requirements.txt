@@ -5,10 +5,23 @@ pydub==0.25.1
 streamlit==1.10.0
 streamlit_webrtc==0.43.0
 pipwin
+streamlit_echarts
+streamlit_tags
+streamlit-ace==0.1.1
+fpdf==1.7.2
+st-annotated-text==3.0.0
+pyresparser==1.0.6
+nltk==3.6.7
+numpy==1.23.5
+difflib==1.2.6
+csv==0.0.13
+requests==2.28.1
+webbrowser==2.1.3
+re==2022.10.31
+PyPDF2==2.12.1
+math
+unicodedata
 # pyaudio
 # SpeechRecognition
 # portaudio
 # gTTS
-streamlit-ace==0.1.1
-fpdf==1.7.2
-st-annotated-text==3.0.0
