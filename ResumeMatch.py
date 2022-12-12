@@ -13,9 +13,7 @@ import csv
 import os
 import streamlit as st
 from streamlit_tags import st_tags
-from streamlit_card import card
 import requests
-import environ
 from PyPDF2 import PdfReader
 import re
 from annotated_text import annotated_text
@@ -24,8 +22,6 @@ import webbrowser
 from packages.common import requestAndParse
 from packages.page import extract_maximums, extract_listings
 from packages.listing import extract_listing
-import enlighten
-from gtts import gTTS
 from pdfGenerator import PDF
 import math
 import unicodedata
