@@ -12,7 +12,7 @@ fpdf==1.7.2
 st-annotated-text==3.0.0
 pyresparser==1.0.6
 nltk==3.6.7
-difflib==1.2.6
+cdifflib==1.2.6
 csv==0.0.13
 requests==2.28.1
 webbrowser==2.1.3
