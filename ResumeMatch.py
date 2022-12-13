@@ -1,7 +1,7 @@
 from lib2to3.refactor import get_all_fix_names
 import unicodedata
 import streamlit as st
-import pyresparser 
+
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -25,6 +25,7 @@ from packages.listing import extract_listing
 from pdfGenerator import PDF
 import math
 import unicodedata
+import pyresparser 
 
 
 
