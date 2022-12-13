@@ -199,7 +199,7 @@ def tokenize_and_get_verbs(text):
             nouns.append(word)
     return nouns
 def read_universal_skills():
-    fileobj=open('/Users/joshuakiprono/Desktop/readme.txt')
+    fileobj=open('./readme.txt')
     universalSkills=[]
     for line in fileobj:
         universalSkills.append(line.strip().lower())
