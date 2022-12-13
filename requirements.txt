@@ -1,7 +1,6 @@
 av==9.2.0
 deepspeech==0.9.3
 numpy==1.23.0
-spacy==2.3.5
 pydub==0.25.1
 streamlit==1.10.0
 streamlit_webrtc==0.43.0
@@ -16,3 +15,5 @@ cdifflib
 requests==2.28.1
 PyPDF2==2.12.1
 pyresparser==1.0.6
+spacy>=2.2.0,<3.0.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz#egg=en_core_web_sm
