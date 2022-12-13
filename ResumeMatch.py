@@ -534,7 +534,6 @@ def startApp():
                         pdf_byte =pdf_file.read()
                     st.download_button(label="Download Your Resume Report",
                     data=pdf_byte,
-                    style="background-color: #DD3300;",
                     file_name="Report.pdf",
                     mime='application/octet-stream')
                     
