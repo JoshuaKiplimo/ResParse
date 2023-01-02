@@ -280,7 +280,7 @@ def startApp():
 
         st.write(
             """     
-    -   *Career Matches* is an app that extracts skills from your resume to help you get matched to careers and opportunities that match your skills
+    -   *Career Matches* is an app that extracts skills from your resume to help you get matched to careers and opportunities.
     -   It used keyword extraction technique that leverages NLP and compares it with a massive database of careers and skills 
     -   No personal data is stored
     -   You can download a pdf analysis of your resume for your later analysis
@@ -290,6 +290,24 @@ def startApp():
     st.write("")  
    
 
+    st.write("")
+    st.write("")
+    st.subheader ("General Resume Tips")
+    st.write("""
+    - A good resume should be well-organized, easy to read, and concise.
+    - It should include your contact information, work experience, education, and any relevant skills or accomplishments. 
+    - It's important to tailor your resume to the specific job or industry that you are applying for, and to highlight your most relevant qualifications and experiences.
+    - Here are some specific tips for making your resume stand out:
+        1. Use a clear, professional font and layout.
+        2. Keep your resume to one or two pages.
+        3. Include specific examples and accomplishments, rather than using vague or overused words.
+        4. Tailor your resume to the specific job or industry that you are applying for.
+        5. Use bullet points to make your resume easy to scan and read.
+        6. Proofread your resume carefully to ensure that it is error-free.
+    
+    Overall, a good resume should effectively highlight your skills, experiences, and qualifications, and showcase why you are the best candidate for the job.
+    """)
+    st.write("")
     st.write("")
     st.write("")
     st.subheader("📁 Upload your resume as pdf")
@@ -330,26 +348,7 @@ def startApp():
                 skillsSet = get_common_skills(resume_data['skills'], read_universal_skills())
                 data = get_top_resume_skills(skillsSet)
                 
-                st.subheader ("🧐 Resume Analysis")
-                st.write(
-                    """
-                    - A good resume should be well-organized, easy to read, and concise.
-                    - It should include your contact information, work experience, education, and any relevant skills or accomplishments. 
-                    - It's important to tailor your resume to the specific job or industry that you are applying for, and to highlight your most relevant qualifications and experiences.
-                    - Here are some specific tips for making your resume stand out:
-                        1. Use a clear, professional font and layout.
-                        2. Keep your resume to one or two pages.
-                        3. Include specific examples and accomplishments, rather than using vague or overused words.
-                        4. Tailor your resume to the specific job or industry that you are applying for.
-                        5. Use bullet points to make your resume easy to scan and read.
-                        6. Proofread your resume carefully to ensure that it is error-free.
-                    
-                    Overall, a good resume should effectively highlight your skills, experiences, and qualifications, and showcase why you are the best candidate for the job.
-                    """
-                )
-                st.write("")
-                st.write("")
-                st.write("")
+                
                  
                 with st.expander(label="📝 Your resume - click to view", expanded= False):
                     
@@ -520,7 +519,7 @@ def startApp():
                         final = f'{name}{": "}{role}'
                         pdf.ln()
                         pdf.chapter_subTitle(final)
-                        desc = str(unicode_normalize(job['Description'].replace("b'", "").replace("/n", ".")))
+                        desc = str(unicode_normalize(job['Description']).replace("b'", "").replace("/n", "."))
                         pdf.multi_cell(0, 7, txt = desc)
                         pdf.ln()
                         pdf.set_text_color(0,0,255)
