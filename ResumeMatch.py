@@ -334,7 +334,9 @@ def startApp():
             
     if uploaded_file is not None:
             
-            save_image_path = './resume/'+uploaded_file.name
+            save_image_path = './resume/'+ uploaded_file.name
+            with open(save_image_path, "wb") as f:
+                f.write(uploaded_file.getbuffer())
 
             st.write("")
             st.write("")
@@ -359,8 +361,8 @@ def startApp():
 
            
                 skillsSet = get_common_skills(resume_data['skills'], read_universal_skills())
-
                 data = get_top_resume_skills(skillsSet)
+                print("DATA", data)
                 
                 st.subheader("🔎 Closer Look")
                 if found_overUsed:
@@ -411,7 +413,11 @@ def startApp():
                 st.write("")
                 st.write("")
                 data2 = []
-                majority = data[0][1]
+                if data:
+                    print(data)
+                    majority = data[0][1]
+                else:
+                    st.write("Occupation data could not be retrieved")
                 
                 for name, val in data:
                     data2.append({"value":(val/majority)*100 , "name":name})
