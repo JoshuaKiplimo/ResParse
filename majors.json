@@ -1,0 +1,304 @@
+{
+  "African and African American Studies": [
+    "management",
+    "communication and media",
+    "education",
+    "advocacy",
+    "government and policy"
+  ],
+  "American Studies": [
+    "law",
+    "journalism",
+    "teaching",
+    "government",
+    "museum curation",
+    "business"
+  ],
+  "Applied Computing Minor": [
+    "computer programmer",
+    "database administrator",
+    "software developer",
+    "information security analyst",
+    "computer network technician"
+  ],
+  "Art Education": [
+    "museum educator",
+    "arts administrator",
+    "post-secondary art teacher",
+    "community art programs",
+    "pre-k-12 art teacher"
+  ],
+  "Biochemistry": [
+    "analytical chemist",
+    "biomedical scientist",
+    "forensic scientist",
+    "clinical research associate",
+    "academic researcher"
+  ],
+  "Bioinformatics": [
+    "bioinformatics scientist",
+    "research scientist",
+    "microbiologist",
+    "biostatistician",
+    "molecular biologist"
+  ],
+  "Biology": [
+    "research scientist",
+    "ecologist",
+    "biotechnologist",
+    "pharmacologist",
+    "nature conservation officer"
+  ],
+  "Biotechnology": [
+    "animal technician",
+    "biofuel technician",
+    "clinical research associates",
+    "cell culture technician",
+    "agricultural and food science technician"
+  ],
+  "Business Administration": [
+    "procurement officer",
+    "human resource manager",
+    "office administrator",
+    "franchising manager",
+    "business developer"
+  ],
+  "Chemistry": [
+    "analytical chemist",
+    "toxicologist",
+    "chemical technician",
+    "chemistry teacher",
+    "quality control chemist"
+  ],
+  "Computer Engineering": [
+    "web developer",
+    "forensic computer analyst",
+    "software engineer",
+    "project engineer",
+    "computer programmer"
+  ],
+  "Computer Science": [
+    "system architect",
+    "information security analyst",
+    "AI engineer",
+    "web developer",
+    "mobile app developer"
+  ],
+  "Creative Writing": [
+    "creative director",
+    "editorial assistant",
+    "arts administrator",
+    "magazine journalist",
+    "lexicographer"
+  ],
+  "Criminal Justice": [
+    "investigative reporter",
+    "intelligence analyst",
+    "forensic psychologist",
+    "private investigator",
+    "criminal profiler"
+  ],
+  "Digital Design": [
+    "concept developer",
+    "photo editor",
+    "web designer",
+    "special effects artist",
+    "illustrator"
+  ],
+  "Drama": [
+    "actor",
+    "drama therapist",
+    "theatre director",
+    "broadcast presenter",
+    "community arts worker"
+  ],
+  "Early Childhood Education": [
+    "preschool teacher",
+    "kindergarten and elementary school teacher",
+    "nanny",
+    "childcare center director",
+    "childcare worker"
+  ],
+  "Elementary Education": [
+    "art teacher",
+    "camp director",
+    "consulting educator",
+    "elementary school administrator",
+    "curriculum development"
+  ],
+  "English": [
+    "archivist",
+    "education consultant",
+    "academic librarian",
+    "advertising copywriter",
+    "arts administrator"
+  ],
+  "English Education": [
+    "teaching English",
+    "social media management",
+    "content creation and management for websites",
+    "private tutoring",
+    "professional or technical writing for companies"
+  ],
+  "Environmental Science": [
+    "environmental specialist",
+    "marine biologist",
+    "microbiologist",
+    "environmental consultant",
+    "environmental science teacher"
+  ],
+  "Foreign Language": [
+    "translator",
+    "customer service representative",
+    "tour guide",
+    "flight steward",
+    "travel agent"
+  ],
+  "Gender Studies": [
+    "counsellor",
+    "artist/filmmaker",
+    "diversity officer",
+    "international development",
+    "communications officer"
+  ],
+  "Human Performance and Recreation": [
+    "recreation specialist",
+    "athletic trainer",
+    "coach",
+    "health/fitness specialist",
+    "recreation coordinator"
+  ],
+  "Management": [
+    "management analyst",
+    "sales manager",
+    "marketing manager",
+    "development coordinator",
+    "general manager"
+  ],
+  "Management Information Science": [
+    "programmer",
+    "systems analyst",
+    "software developer",
+    "database manager",
+    "network administrator"
+  ],
+  "Marketing": [
+    "public relations specialist",
+    "brand manager",
+    "marketing assistant",
+    "market research analyst",
+    "digital marketer"
+  ],
+  "Mass Communications": [
+    "journalism",
+    "public relations",
+    "advertising and marketing",
+    "corporate communications",
+    "film production"
+  ],
+  "Mathematics": [
+    "actuary",
+    "algorithmic engineer",
+    "data scientist",
+    "college or university professor",
+    "investment banking analyst"
+  ],
+  "Mathematics Education": [
+    "math science professor",
+    "research scientists",
+    "math education researchers",
+    "elementary school teacher",
+    "superintendent"
+  ],
+  "Middle Level Education": [
+    "teaching",
+    "school administration",
+    "advocacy",
+    "museum programs",
+    "tutoring"
+  ],
+  "Music": [
+    "music producer",
+    "sound designer",
+    "musician",
+    "private music teacher",
+    "sound technician"
+  ],
+  "Music Education": [
+    "choreographer",
+    "composer",
+    "teacher",
+    "director",
+    "music arranger and orchestrator"
+  ],
+  "Organizational Management": [
+    "human resource manager",
+    "training and development manager",
+    "sales manager",
+    "management analyst",
+    "insurance underwriter"
+  ],
+  "Performing Ensembles": [
+    "camp counselor",
+    "event staff",
+    "production assistant",
+    "theater manager",
+    "social media intern"
+  ],
+  "Philosophy and Religion": [
+    "columnist",
+    "chaplain",
+    "religious education teacher",
+    "paralegal",
+    "guidance counselor"
+  ],
+  "PK-12 and Secondary education programs": [
+    "college professor",
+    "education administration",
+    "middle school and high school teachers",
+    "elementary school teacher",
+    "teacher assistant"
+  ],
+  "Political Science": [
+    "policy analyst",
+    "legislative assistant",
+    "public relations specialist",
+    "attorney",
+    "political consultant"
+  ],
+  "Psychology": [
+    "psychologist",
+    "psychotherapist",
+    "social worker",
+    "educational psychologist",
+    "counselor"
+  ],
+  "RN to BSN in Nursing": [
+    "acute care nurse",
+    "certified nurse assistant",
+    "community nurse",
+    "air force nurse",
+    "camp nurse"
+  ],
+  "Sociology": [
+    "project manager",
+    "market analyst",
+    "consumer relation specialist",
+    "banker",
+    "quality control manager"
+  ],
+  "Sport Management": [
+    "athletic coach",
+    "contract administrator",
+    "business development coordinator",
+    "athletic director",
+    "corporate partnerships manager"
+  ],
+  "Studio Art": [
+    "animator",
+    "graphic designer",
+    "interior designer",
+    "photographer",
+    "art director"
+  ]
+}
