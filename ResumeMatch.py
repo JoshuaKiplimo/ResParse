@@ -33,7 +33,7 @@ nlp = en_core_web_sm.load()
 
 def record_Audio():
     with st.expander("🎙️" + " Prefer audio assistant instead ?", expanded=False):
-            audiorec_demo_app(parent_dir, build_dir,st_audiorec)
+            #audiorec_demo_app(parent_dir, build_dir,st_audiorec)
             import speech_recognition as sr  
 
             # get audio from the microphone                                                                       
@@ -52,7 +52,7 @@ def record_Audio():
                         myobj.save("welcome.mp3")
                         # Playing the converted file
                         os.system("mpg321 welcome.mp3")
-                        #process_text(audio_text)
+                        process_text(audio_text)
                     except sr.UnknownValueError:
                         st.write("Could not understand audio")
                     except sr.RequestError as e:
@@ -323,7 +323,7 @@ def startApp():
     st.write("[Sample Resume 3](%s)" % url3)
     st.write("[Sample Resume 4](%s)" % url4)
     st.write("[Sample Resume 5](%s)" % url5)
-    #record_Audio()
+    record_Audio()
 
 
 
