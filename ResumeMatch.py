@@ -33,7 +33,7 @@ nlp = en_core_web_sm.load()
 
 def record_Audio():
     with st.expander("🎙️" + " Prefer audio assistant instead ?", expanded=False):
-            #audiorec_demo_app(parent_dir, build_dir,st_audiorec)
+            audiorec_demo_app(parent_dir, build_dir,st_audiorec)
             import speech_recognition as sr  
 
             # get audio from the microphone                                                                       
